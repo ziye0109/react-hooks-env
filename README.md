@@ -1,7 +1,11 @@
 # react-hooks-env
 
-React 16.8 for hooks
+Bolierplate for React Hooks Project
+
+React 16.8
 
 Babel 7
 
 Webpack 4
+
+Eslint

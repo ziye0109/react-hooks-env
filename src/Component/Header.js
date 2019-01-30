@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Header = () => {
-    const [title] = useState('React Hook');
+  const [title] = useState('title');
 
-    return <div className='container'>
+  useEffect(() => {
+    document.title = title;
+  });
 
-                <div className='title'>{title}</div>
-
-        </div>;
+  return (
+    <div className="container">
+      <div className="title">{title}</div>
+    </div>
+  );
 };
-
 
 export default Header;

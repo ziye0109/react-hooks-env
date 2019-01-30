@@ -1,6 +1,6 @@
-import React from "react";
-import "./Home.css";
-import Header from "./Header";
+import React from 'react';
+import './Home.css';
+import Header from './Header';
 
 const Home = () => (
   <>
