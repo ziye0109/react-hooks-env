@@ -61,4 +61,4 @@ typings/
 .next
 
 # artifact
-dist
+dist/
