@@ -18,6 +18,8 @@
   "homepage": "https://github.com/ziye0109/react-hooks-env#readme",
   "dependencies": {
     "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1"
+    "react-dom": "^16.8.0-alpha.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
   }
 }
