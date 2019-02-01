@@ -5,8 +5,11 @@ const useGlobalState = () => {
   const [language, setLanguage] = useState('en');
 
   return {
- theme, setTheme, language, setLanguage
-};
+    theme,
+    setTheme,
+    language,
+    setLanguage
+  };
 };
 
 export default useGlobalState;
