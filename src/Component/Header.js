@@ -1,9 +1,11 @@
-import React from "react";
-import { compose, withHandlers } from "recompose";
-import withContext from "../Hoc/withContext";
-import "./Header.css";
+import React from 'react';
+import { compose, withHandlers } from 'recompose';
+import withContext from '../Hoc/withContext';
+import './Header.css';
 
-const Header = ({ theme, toggleTheme, language, toggleLanguage }) => (
+const Header = ({
+ theme, toggleTheme, language, toggleLanguage
+}) => (
   <>
     <div className={`header ${theme}`}>
       <div className="left">{language}</div>
@@ -22,10 +24,8 @@ const Header = ({ theme, toggleTheme, language, toggleLanguage }) => (
 const HeaderWithContext = compose(
   withContext,
   withHandlers({
-    toggleTheme: ({ themeDispacher }) => () =>
-      themeDispacher({ type: "TOGGLE_THEME" }),
-    toggleLanguage: ({ languageDispacher }) => () =>
-    languageDispacher({ type: "TOGGLE_LANGUAGE" })
+    toggleTheme: ({ themeDispacher }) => () => themeDispacher({ type: 'TOGGLE_THEME' }),
+    toggleLanguage: ({ languageDispacher }) => () => languageDispacher({ type: 'TOGGLE_LANGUAGE' })
   })
 )(Header);
 

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Grid = ({ width = "24", height = "24", color = "gray" }) => (
+const Grid = ({ width = '24', height = '24', color = 'gray' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
