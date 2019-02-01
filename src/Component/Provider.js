@@ -5,7 +5,8 @@ class Provider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      theme: 'red'
+      theme: 'red',
+      language: 'en',
     };
 
     this.themeUpdater = this.themeUpdater.bind(this);
@@ -18,7 +19,7 @@ class Provider extends React.Component {
   render() {
     return (
       <Context.Provider
-        value={{ theme: this.state, themeUpdater: this.themeUpdater }}
+        value={{ appSetting: this.state, themeUpdater: this.themeUpdater }}
       >
         {this.props.children}
       </Context.Provider>
