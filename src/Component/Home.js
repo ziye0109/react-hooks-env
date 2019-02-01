@@ -3,10 +3,10 @@ import Header from './Header';
 import ContentArea from './ContentArea';
 
 const Home = () => (
-    <>
-      <Header />
-      <ContentArea />
-    </>
-  );
+  <>
+    <Header />
+    <ContentArea />
+  </>
+);
 
 export default Home;

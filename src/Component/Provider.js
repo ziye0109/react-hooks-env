@@ -1,17 +1,11 @@
-import React, { useState } from 'react';
-import Context from '../Context/Context';
+import React from "react";
+import Context from "../Context/Context";
+import useGlobalState from "../CustomHooks/useGlobalState";
 
-const Provider = ({ children }) => {
-  const [theme, setTheme] = useState('blue');
-  const [language, setLanguage] = useState('en');
-
-  return (
-    <Context.Provider
-      value={{ appSetting: { theme, language }, setTheme, setLanguage }}
-    >
-      {children}
-    </Context.Provider>
-  );
-};
+const Provider = ({ children }) => (
+  <Context.Provider value={{ ...useGlobalState() }}>
+    {children}
+  </Context.Provider>
+);
 
 export default Provider;

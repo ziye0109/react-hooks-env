@@ -3,10 +3,7 @@ import Context from '../Context/Context';
 import './Header.css';
 
 const Header = () => {
-  const {
-    appSetting: { language }
-  } = useContext(Context);
-
+  const { language } = useContext(Context);
   return (
     <>
       <div className="header">

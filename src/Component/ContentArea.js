@@ -3,9 +3,7 @@ import Context from '../Context/Context';
 import './ContentArea.css';
 
 const ContentArea = () => {
-  const {
-    appSetting: { theme }
-  } = useContext(Context);
+  const { theme } = useContext(Context);
   return (
     <>
       <div className={`container ${theme}`}>
