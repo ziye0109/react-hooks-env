@@ -1,7 +1,7 @@
-import React from "react";
-import { compose } from "recompose";
-import withContext from "../Hoc/withContext";
-import "./Header.css";
+import React from 'react';
+import { compose } from 'recompose';
+import withContext from '../Hoc/withContext';
+import './Header.css';
 
 const Header = ({ language }) => (
   <>

@@ -1,11 +1,11 @@
-import React from "react";
-import { compose } from "recompose";
-import withContext from "../Hoc/withContext";
-import "./ContentArea.css";
+import React from 'react';
+import { compose } from 'recompose';
+import withContext from '../Hoc/withContext';
+import './ContentArea.css';
 
 const ContentArea = ({ theme, themeDispacher }) => (
   <>
-    <div onClick={() => themeDispacher({ type: "TOGGLE_THEME" })}>
+    <div onClick={() => themeDispacher({ type: 'TOGGLE_THEME' })}>
       switch theme
     </div>
     <div className={`container ${theme}`}>
