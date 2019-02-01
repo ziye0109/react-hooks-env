@@ -1,8 +1,14 @@
 # react-hooks-env
 
-Bolierplate for React Hooks Project
+Bolierplate for React 
 
-React 16.8
+React 16.8 Hooks API
+
+Recompose
+
+Redux
+
+React-Redux
 
 Babel 7
 

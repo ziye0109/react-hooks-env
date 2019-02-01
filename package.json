@@ -11,7 +11,10 @@
     "precommit-msg": "echo 'Pre-commit checks.........' && exit 0",
     "lint": "eslint --fix --ext .js --ext .jsx src"
   },
-  "pre-commit": ["precommit-msg", "lint"],
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ziye0109/react-hooks-env.git"
@@ -24,7 +27,8 @@
   "homepage": "https://github.com/ziye0109/react-hooks-env#readme",
   "dependencies": {
     "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1"
+    "react-dom": "^16.8.0-alpha.1",
+    "recompose": "^0.30.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
