@@ -7,11 +7,23 @@
   grid-template-columns: 90% 10%;
 }
 
-.switch_language {
-  display: flex;
-  justify-content: center;
+.red {
+  background-color:#ffa100;
+}
+
+.blue {
+  background-color: #0089c4;
+  ;
+}
+
+.switch_language,
+.switch_theme {
+  background-color: #ffa100;
+  min-width: 48px;
   padding: 4px;
+  color: white;
+  text-align: center;
   border-radius: 4px;
   cursor: pointer;
-  color: white;
+  margin-right: 8px;
 }

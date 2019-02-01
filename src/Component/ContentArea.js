@@ -1,12 +1,18 @@
-import React from 'react';
-import { compose } from 'recompose';
-import withContext from '../Hoc/withContext';
-import './ContentArea.css';
+import React from "react";
+import { compose } from "recompose";
+import withContext from "../Hoc/withContext";
+import Grid from "../Component/Icon/Grid";
+import List from "../Component/Icon/List";
+import "./ContentArea.css";
 
-const ContentArea = ({ theme, themeDispacher }) => (
+const ContentArea = ({ theme }) => (
   <>
-    <div onClick={() => themeDispacher({ type: 'TOGGLE_THEME' })}>
-      switch theme
+    <div className="theme_container">
+      <div lassName="left" />
+      <div className="right">
+        <Grid />
+        <List />
+      </div>
     </div>
     <div className={`container ${theme}`}>
       <div className="box">box1</div>

@@ -1,24 +1,33 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(1fr, 4);
-    grid-gap: 16px;
-    background-color: lightgray;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .box {
-    background-color: white;
-    margin: 8px;
-    height: 300px;
-  }
-  
-  .red {
-    background-color: lightcoral;
-  }
-  
-  .blue
-  {
-    background-color: lightblue;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(1fr, 4);
+  grid-gap: 16px;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  background-color: white;
+  margin: 8px;
+  height: 300px;
+}
+
+.red {
+  background-color:#ffa100;
+}
+
+.blue {
+  background-color: #0089c4;
+}
+
+.theme_container {
+  display: grid;
+  grid-template-columns: 95% 5%;
+  margin-bottom: 8px;
+}
+
+.right {
+  display: flex;
+}

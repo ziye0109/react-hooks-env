@@ -4,7 +4,7 @@ import languageReducer from '../Reducers/language';
 
 const useGlobalState = () => {
   const [theme, themeDispacher] = useReducer(themeReducer, 'blue');
-  const [language, languageDispacher] = useReducer(languageReducer, 'EN');
+  const [language, languageDispacher] = useReducer(languageReducer, 'en');
 
   return {
     theme,
