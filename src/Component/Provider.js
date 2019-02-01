@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Context from "../Context";
+import React, { useState } from 'react';
+import Context from '../Context';
 
 const Provider = ({ children }) => {
-  const [theme, setTheme] = useState("blue");
-  const [language, setLanguage] = useState("en");
+  const [theme, setTheme] = useState('blue');
+  const [language, setLanguage] = useState('en');
 
   return (
     <Context.Provider
