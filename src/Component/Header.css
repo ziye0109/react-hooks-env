@@ -1,0 +1,13 @@
+.header {
+  color: white;
+  background-color: lightgray;
+  margin-bottom: 8px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.switch_language {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,30 +1,17 @@
-import React from 'react';
-import Context from '../Context';
+import React, { useState } from "react";
+import Context from "../Context";
 
-class Provider extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      theme: 'red',
-      language: 'en',
-    };
+const Provider = ({ children }) => {
+  const [theme, setTheme] = useState("blue");
+  const [language, setLanguage] = useState("en");
 
-    this.themeUpdater = this.themeUpdater.bind(this);
-  }
-
-  themeUpdater(newState) {
-    this.setState({ ...this.state, newState });
-  }
-
-  render() {
-    return (
-      <Context.Provider
-        value={{ appSetting: this.state, themeUpdater: this.themeUpdater }}
-      >
-        {this.props.children}
-      </Context.Provider>
-    );
-  }
-}
+  return (
+    <Context.Provider
+      value={{ appSetting: { theme, language }, setTheme, setLanguage }}
+    >
+      {children}
+    </Context.Provider>
+  );
+};
 
 export default Provider;
