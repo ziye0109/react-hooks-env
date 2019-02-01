@@ -1,13 +1,17 @@
 .header {
   color: white;
-  background-color: lightgray;
+  background-color: #1982af;
   margin-bottom: 8px;
   padding: 16px;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 90% 10%;
 }
 
 .switch_language {
-  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
   cursor: pointer;
+  color: white;
 }
