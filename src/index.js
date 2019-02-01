@@ -4,7 +4,7 @@ import Home from "./Component/Home";
 import Provider from "./Component/Provider";
 import Context from "./Context";
 
-const App = (
+const App = () => (
   <Provider>
     <Context.Consumer>{value => <Home theme={value.theme} />}</Context.Consumer>
   </Provider>
