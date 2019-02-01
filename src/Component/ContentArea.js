@@ -3,9 +3,12 @@ import Context from '../Context/Context';
 import './ContentArea.css';
 
 const ContentArea = () => {
-  const { theme } = useContext(Context);
+  const { theme, themeDispacher } = useContext(Context);
   return (
     <>
+      <div onClick={() => themeDispacher({ type: 'TOGGLE_THEME' })}>
+        switch theme
+      </div>
       <div className={`container ${theme}`}>
         <div className="box">box1</div>
         <div className="box">box2</div>

@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import { useReducer } from "react";
+import themeReducer from "../Reducers/theme";
+import languageReducer from "../Reducers/language";
 
 const useGlobalState = () => {
-  const [theme, setTheme] = useState('blue');
-  const [language, setLanguage] = useState('en');
+  const [theme, themeDispacher] = useReducer(themeReducer, "blue");
+  const [language, languageDispacher] = useReducer(languageReducer, "en");
 
   return {
     theme,
-    setTheme,
+    themeDispacher,
     language,
-    setLanguage
+    languageDispacher
   };
 };
 
