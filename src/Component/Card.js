@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import "./Card.css";
+import React, { useEffect } from 'react';
+import './Card.css';
 
 const Card = () => {
   useEffect(() => {
-    console.log("mounted!");
+    console.log('mounted!');
   }, []);
 
   return (
