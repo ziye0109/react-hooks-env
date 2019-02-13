@@ -1,9 +1,10 @@
-import React from "react";
-import { compose } from "recompose";
-import withContext from "../Hoc/withContext";
-import Grid from "../Component/Icon/Grid";
-import List from "../Component/Icon/List";
-import "./ContentArea.css";
+import React from 'react';
+import { compose } from 'recompose';
+import withContext from '../Hoc/withContext';
+import Grid from './Icon/Grid';
+import List from './Icon/List';
+import Card from './Card';
+import './ContentArea.css';
 
 const ContentArea = ({ theme }) => (
   <>
@@ -15,16 +16,13 @@ const ContentArea = ({ theme }) => (
       </div>
     </div>
     <div className={`container ${theme}`}>
-      <div className="box">box1</div>
-      <div className="box">box2</div>
-      <div className="box">box3</div>
-      <div className="box">box4</div>
-      <div className="box">box5</div>
-      <div className="box">box6</div>
-      <div className="box">box7</div>
-      <div className="box">box8</div>
-      <div className="box">box9</div>
-      <div className="box">box10</div>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
     </div>
   </>
 );
