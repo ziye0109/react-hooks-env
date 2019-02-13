@@ -3,3 +3,17 @@
     margin: 8px;
     height: 300px;
   }
+
+  .count_button{
+
+    background-color: #ffa100;
+    min-width: 48px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom:4px;
+
+  }
