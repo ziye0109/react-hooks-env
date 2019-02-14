@@ -26,10 +26,11 @@
   },
   "homepage": "https://github.com/ziye0109/react-hooks-env#readme",
   "dependencies": {
+    "history": "^4.7.2",
     "react": "^16.8.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "recompose": "^0.30.0"
   },
   "devDependencies": {
