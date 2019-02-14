@@ -1,6 +1,6 @@
-import React from "react";
-import useCard from "../CustomHooks/useCard";
-import "./Card.css";
+import React from 'react';
+import useCard from '../CustomHooks/useCard';
+import './Card.css';
 
 const Card = () => {
   const [count, incrementCount, decrementCount] = useCard();

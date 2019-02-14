@@ -1,5 +1,5 @@
-import { useState, useEffect, useMemo } from "react";
-import usePrevious from "../CustomHooks/usePrevious";
+import { useState, useEffect, useMemo } from 'react';
+import usePrevious from './usePrevious';
 
 const useCard = () => {
   const [count, setCount] = useState(0);
@@ -10,11 +10,11 @@ const useCard = () => {
   const preCount = usePrevious(count);
 
   useEffect(() => {
-    console.log("mounted!");
+    console.log('mounted!');
   }, []);
 
   useEffect(() => {
-    console.log("updated if count changes!");
+    console.log('updated if count changes!');
     console.log(`pre: ${preCount} cur: ${count}`);
   }, [count]);
 
