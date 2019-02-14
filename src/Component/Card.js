@@ -1,42 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import usePrevious from '../CustomHooks/usePrevious';
-import './Card.css';
-
+import React from "react";
+import useCard from "../CustomHooks/useCard";
+import "./Card.css";
 
 const Card = () => {
-  const [state, setCount] = useState({ count: 0 });
-
-  const preState = usePrevious(state.count);
-
-  useEffect(() => {
-    console.log('mounted!');
-  }, []);
-
-  useEffect(() => {
-    console.log('updated if count changes!');
-    console.log(`pre: ${preState} cur: ${state.count}`);
-  }, [state.count]);
+  const [count, incrementCount, decrementCount] = useCard();
 
   return (
     <>
       <div className="card">
-        <div>{state.count}</div>
-        <div>
-          <div
-            className="count_button"
-            onClick={() => {
-              setCount(value => ({ count: value.count + 1 }));
-            }}
-          >
+        <div className="top">
+          <div className="count_button" onClick={incrementCount}>
             increment count
           </div>
-          <div
-            className="count_button"
-            onClick={() => setCount(value => ({ count: value.count - 1 }))}
-          >
+          <div className="count_button" onClick={decrementCount}>
             decrement count
           </div>
         </div>
+
+        <div className="bottom">{count}</div>
       </div>
     </>
   );
