@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDom from "react-dom";
-import Home from "./Component/Home";
-import Provider from "./Component/Provider";
+import React from 'react';
+import ReactDom from 'react-dom';
+import Home from './Component/Home';
+import Provider from './Component/Provider';
 
 const App = () => (
   <Provider>
@@ -9,4 +9,4 @@ const App = () => (
   </Provider>
 );
 
-ReactDom.render(<App />, document.getElementById("root"));
+ReactDom.render(<App />, document.getElementById('root'));
